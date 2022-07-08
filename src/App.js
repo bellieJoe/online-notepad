@@ -1,11 +1,13 @@
 import logo from './logo.svg';
+import Nav from './components/Nav/Nav'
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
+      <Nav />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           On this site will rise Online-Notepad
         </p>
