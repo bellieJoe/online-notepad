@@ -2,11 +2,15 @@
 .Nav {
     background-color: #000000;
     color: #fff;
+    position: sticky;
+    top: 0px;
     padding: .5rem 0rem;
     .container{
         display: flex;
         align-items: center;
-        
+        .menu-con{
+            display: none;
+        }
         .logo-con {
             flex: 1;
             display: flex;
@@ -16,27 +20,113 @@
             flex: 1;
             display: flex;
             justify-content: flex-end;
+            @media screen and(max-width: 950px){
+                flex: 2;
+            }
+            button{
+                display: none;
+            }
             li{
                 background-color: #fff;
                 color: #000000;
                 list-style: none;
                 padding: .5rem  1rem;
+                cursor: pointer;
                 &:last-child{
                     border-radius: 0px 5px 5px 0px;
                     background-color: black;
                     color: white;
                     border: 1px solid white;
                 }
-                &:first-child{
+                &:nth-child(2){
                     border-radius:  5px 0px 0px 5px ;
                 }
-                &:first-child, &:nth-child(2){
+                &:nth-child(2), &:nth-child(3){
                     border-right:  1px solid black ;
                 }
                 &:hover{
                     transition: .4s;
                     opacity: 50%;
+                    
+                }
+            }
+        }
+    }
+}
+
+.menu-display{
+    left: 0px !important;
+}
+
+.menu-hide{
+    left: -300px !important;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .Nav{
+        .container{
+            // flex-direction: column;
+            align-items: flex-start;
+
+            .menu-con{
+                display: inherit;
+                align-self: center;
+                margin: 0rem 1rem;
+                button{
+                    font-size: xx-large;
+                    background-color: black;
+                    font-weight: bold;
+                    outline: none;
+                    color: white;
+                    border: none;
                     cursor: pointer;
+                    &:hover{
+                        color: rgb(140, 140, 140);
+                    }
+                }
+            }
+            .logo-con img{
+                width: 80px;
+            }
+            ul{
+                position: fixed;
+                top: 0px;
+                left: -300px;
+                flex-direction: column;
+                justify-content: start;
+                height: 100vh;
+                width: 300px;
+                max-width: 100%;
+                background-color: black;
+                box-shadow: 0px 0px 5px black;
+                transition: .4s;
+                button{
+                    display: block;
+                    margin: 1rem 1rem 1rem auto;
+                    color: white;
+                    background: black;
+                    cursor: pointer;
+                    font-size: xx-large;
+                    font-weight: bold;
+                    outline: none;
+                    border: none;
+                    &:hover{
+                        color: gray;
+
+                    }
+                }
+                li{
+                    text-align: left;
+                    border: none !important;
+                    border-radius: 0px !important;
+                    background: black;
+                    color: white;
+                    &:hover{
+                        background-color: white;
+                        opacity: 100%;
+                        color: black;
+                    }
                 }
             }
         }
