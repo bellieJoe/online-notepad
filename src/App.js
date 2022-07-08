@@ -1,18 +1,24 @@
 import logo from './logo.svg';
-import Nav from './components/Nav/Nav'
 import './App.scss';
+
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
+import Nav from './components/Nav/Nav';
+import Home from "./Pages/Home/Home";
+import SignIn from './Pages/SignIn/SignIn';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <Nav />
-      <header className="App-header">
-        
-        <p>
-          On this site will rise Online-Notepad
-        </p>
-      </header>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/signin' element={<SignIn />}></Route>
+      </Routes>
+      
     </div>
+    </BrowserRouter>
   );
 }
 

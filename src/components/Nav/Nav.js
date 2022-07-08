@@ -2,12 +2,17 @@ import "./Nav.scss";
 import "../../Utils.scss";
 import logo from "../../logo.svg";
 
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 
 function Nav(){
 
-    const [menuToggle, setMenuToggle] = useState(false)
+    const [menuToggle, setMenuToggle] = useState(false);
+    const hideMenu = () => setMenuToggle(false);
+    const LinkStyle = {
+        textDecoration: "none",
+    };
 
     return (
         <div className="Nav" id="Nav">
@@ -18,14 +23,14 @@ function Nav(){
                     </button>
                 </div>
                 <div className="logo-con">
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <Link to=""><img src={logo} className="App-logo" alt="logo" /></Link>
                 </div>
                 <ul className={menuToggle ? "menu-display" : "menu-hide"}>
-                    <button  onClick={() => setMenuToggle(false)}><i className="fa-solid fa-xmark"></i></button>
+                    <button  onClick={hideMenu}><i className="fa-solid fa-xmark"></i></button>
                     <li><i className="fa-solid fa-table-list space-after"></i> Notes</li>
                     <li><i className="fa-solid fa-user space-after"></i> Profile</li>
                     <li><i className="fa-solid fa-user-plus space-after"></i> Sign Up</li>
-                    <li><i className="fa-solid fa-right-to-bracket space-after"></i> Sign In</li>
+                    <Link onClick={hideMenu} to="signin" style={LinkStyle}><li><i className="fa-solid fa-right-to-bracket space-after"></i> Sign In</li></Link>
                 </ul>
             </div>
             
