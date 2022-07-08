@@ -2,7 +2,7 @@ import "./Home.scss";
 import "../../Utils.scss";
 import heroTitle from "../../Assets/Images/hero-title.svg";
 import heroExtension from "../../Assets/Images/hero-extension.svg";
-// import notepad from "../../Assets/Images/notepad.svg";
+
 
 import { Link } from "react-router-dom";
 
