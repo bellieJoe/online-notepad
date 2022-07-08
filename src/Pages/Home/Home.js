@@ -26,7 +26,6 @@ function Home(){
                     <div>
                         <h1>Created By Bellie Joe Jandusay</h1>
                     </div>
-                    {/* <img src={notepad} alt="notepad" /> */}
                 </div>
             </section>
         </div>

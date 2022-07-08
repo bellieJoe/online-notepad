@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Display&display=swap');
 
 .Home {
+    
     background-color: #EFEFEF;
     .hero-section  {
         background:  url("../../Assets/Images/hero-bg-shapes.svg");
@@ -15,7 +16,7 @@
             top: 8.35rem;
             img{
                 width: 100%;
-                min-width: 700px
+                min-width: 700px;
             };
         }
         .container{
@@ -27,6 +28,9 @@
                 font-family: 'Times New Roman', Times, serif;
                 font-size: 70px;
                 color: rgb(193, 193, 193);
+                @media screen and(max-width: 500px){
+                    font-size: 50px;
+                }
                 &::before{
                     content: open-quote;
                 }
@@ -55,15 +59,10 @@
     .creator-section{
         padding: 8rem 0rem;
         div{
-            // background: url("../../Assets/Images/notepad.svg");
-            // background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
         }
-        // img{
-        //     width: 600px;
-        //     max-width: 100%;
-        // }
+
     }
     
 }
