@@ -27,10 +27,11 @@ function Home(){
                     <div>
                         <h1>Created By <span>Bellie Joe Jandusay</span></h1>
                         <div className="socials">
-                            <i className="fa-brands fa-facebook-square facebook"></i>
-                            <i className="fa-brands fa-google-plus-square google"></i>
-                            <i className="fa-brands fa-linkedin linkedin"></i>
-                            <i className="fa-brands fa-github-square github"></i>
+                            <a href="https://web.facebook.com/belliejoe.jandusay/" target="_blank"><i className="fa-brands fa-facebook-square facebook"></i></a>
+                            <i id="google-social" className="fa-brands fa-google-plus-square google"></i>
+                            <label htmlFor="google-social" class="gmail-tooltip">jandusayjoe14@gmail.com</label>
+                            <a href="https://www.linkedin.com/in/bellie-joe-jandusay-8023161a8/" target="_blank"><i className="fa-brands fa-linkedin linkedin"></i></a>
+                            <a href="https://github.com/bellieJoe" target="_blank"><i className="fa-brands fa-github-square github"></i></a>
                         </div>
                     </div>
                 </div>

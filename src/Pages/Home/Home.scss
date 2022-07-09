@@ -70,14 +70,31 @@
                     font-size: xx-large;
                     margin: .5rem;
                 }
+                .gmail-tooltip{
+                    background: rgba(44, 44, 44, 0.841);
+                    border-radius: 4px;
+                    padding: .5rem;
+                    color: white;
+                    position: absolute;
+                    margin: 2.5rem 0rem 0rem -117px;
+                    box-shadow: 0px 5px 5px rgb(184, 184, 184);
+                    opacity: 0%;
+                }
                 .facebook{
                     color: #4267B2;
                 }
                 .google{
                     color: #DB4437;
+                    &:hover + .gmail-tooltip{
+                        transition: .4s;
+                        opacity: 100%;
+                    }
                 }
                 .linkedin{
                     color: #0A66C2;
+                }
+                .github{
+                    color: black;
                 }
             }
         }
