@@ -1,5 +1,5 @@
 import "./Nav.scss";
-import "../../Utils.scss";
+import "../../Utilities/Styles/ComponentUtils.scss";
 import logo from "../../logo.svg";
 
 import { Link } from "react-router-dom";

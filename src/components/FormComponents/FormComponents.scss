@@ -1,0 +1,62 @@
+@use "../../Utilities/Styles/Theme.scss";
+
+.form-header{
+    font-weight: bold;
+    h2{
+        color: Theme.$primary-darker;
+    }
+}
+
+.form-input{
+    margin: 1rem 0rem;
+    .eye-toggle-container{
+        position: relative;
+        height: 0px;
+        top: -2.2rem;
+        .eye-toggle{
+            float: right;
+            margin-right: 1rem;
+            color: gray;
+            cursor: pointer;
+        }
+    }
+    label, input{
+        display: block;
+    }
+    label{
+        margin-bottom: .5rem;
+    }
+    input{
+        width: 100%;
+        border: 2px solid rgb(181, 181, 181);
+        border-radius: 3px;
+        outline: 2px solid Theme.$primary-lighter;
+        outline: none;
+        font-size: medium;
+        background: Theme.$light-shade;
+        padding: 1rem;
+        &:hover{
+            transition: .4s;
+            border: 2px solid Theme.$primary-lighter;
+        }
+    }
+}
+
+.form-buttons{
+    width: fit-content;
+    margin: 1rem 0rem 1rem auto;
+    button{
+        border: none;
+        border-radius: 3px;
+        font-size: medium;
+        padding: 1rem;
+        transition: .4s;
+        cursor: pointer;
+        color: white;
+        background: Theme.$primary;
+        box-shadow: 0px 4px 0px Theme.$primary-darker;
+        &:hover{
+            background: Theme.$primary-lighter;
+        }
+    }
+}

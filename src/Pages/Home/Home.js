@@ -1,5 +1,5 @@
 import "./Home.scss";
-import "../../Utils.scss";
+import "../../Utilities/Styles/ComponentUtils.scss";
 import heroTitle from "../../Assets/Images/hero-title.svg";
 import heroExtension from "../../Assets/Images/hero-extension.svg";
 import footerExtension from "../../Assets/Images/footer-extension.svg";
@@ -33,7 +33,7 @@ function Home(){
                             <a href="https://www.linkedin.com/in/bellie-joe-jandusay-8023161a8/" target="_blank"><i className="fa-brands fa-linkedin linkedin"></i></a>
                             <a href="https://github.com/bellieJoe" target="_blank"><i className="fa-brands fa-github-square github"></i></a>
                         </div>
-                    </div>
+                </div>
                 </div>
             </section>
             <section className="footer-section">

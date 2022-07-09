@@ -1,3 +1,5 @@
+@use './Utilities/Styles/Theme.scss';
+
 *{
   box-sizing: border-box;
   margin: 0px;
@@ -6,6 +8,11 @@
 
 .App {
   text-align: center;
+  background-color: Theme.$light-shade;
+}
+
+a{
+  text-decoration: none;
 }
 
 

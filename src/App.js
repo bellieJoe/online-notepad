@@ -3,7 +3,7 @@ import './App.scss';
 
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import Nav from './components/Nav/Nav';
+import Nav from './Components/Nav/Nav';
 import Home from "./Pages/Home/Home";
 import SignIn from './Pages/SignIn/SignIn';
 
