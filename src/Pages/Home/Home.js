@@ -2,6 +2,7 @@ import "./Home.scss";
 import "../../Utils.scss";
 import heroTitle from "../../Assets/Images/hero-title.svg";
 import heroExtension from "../../Assets/Images/hero-extension.svg";
+import footerExtension from "../../Assets/Images/footer-extension.svg";
 
 
 import { Link } from "react-router-dom";
@@ -24,8 +25,19 @@ function Home(){
             <section class="creator-section">
                 <div className="container">
                     <div>
-                        <h1>Created By Bellie Joe Jandusay</h1>
+                        <h1>Created By <span>Bellie Joe Jandusay</span></h1>
+                        <div className="socials">
+                            <i className="fa-brands fa-facebook-square facebook"></i>
+                            <i className="fa-brands fa-google-plus-square google"></i>
+                            <i className="fa-brands fa-linkedin linkedin"></i>
+                            <i className="fa-brands fa-github-square github"></i>
+                        </div>
                     </div>
+                </div>
+            </section>
+            <section className="footer-section">
+                <div>
+                    <img src={footerExtension} alt="footer wave" />
                 </div>
             </section>
         </div>

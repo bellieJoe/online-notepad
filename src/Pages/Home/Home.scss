@@ -58,11 +58,46 @@
     }
     .creator-section{
         padding: 8rem 0rem;
-        div{
-            background-repeat: no-repeat;
-            background-position: center;
+        .container{
+            h1{
+                font-weight: normal;
+                span{
+                    font-weight: bold;
+                }
+            }
+            .socials{
+                i{
+                    font-size: xx-large;
+                    margin: .5rem;
+                }
+                .facebook{
+                    color: #4267B2;
+                }
+                .google{
+                    color: #DB4437;
+                }
+                .linkedin{
+                    color: #0A66C2;
+                }
+            }
         }
 
+    }
+    .footer-section{
+        background-image: url("../../Assets/Images/footer-bg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 0px 0px 8rem 0px;
+        div{
+            overflow: hidden;
+            position: relative;
+            top: -.2rem;
+            img{
+                width: 100%;
+                min-width: 700px;
+            };
+        }
     }
     
 }
