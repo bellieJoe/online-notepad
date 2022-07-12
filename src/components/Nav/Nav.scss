@@ -27,29 +27,30 @@
             button{
                 display: none;
             }
-            li{
+            a{
                 background-color: #fff;
                 color: #000000;
                 list-style: none;
                 padding: .5rem  1rem;
                 cursor: pointer;
-                &:last-child{
-                    border-radius: 0px 5px 5px 0px;
-                    background-color: black;
-                    color: white;
-                    border: 1px solid white;
-                }
-                &:nth-child(2){
-                    border-radius:  5px 0px 0px 5px ;
-                }
-                &:nth-child(2), &:nth-child(3){
-                    border-right:  1px solid black ;
-                }
                 &:hover{
                     transition: .4s;
                     opacity: 50%;
                     
                 }
+                &:last-child {
+                    border-radius: 0px 5px 5px 0px;
+                    background-color: black;
+                    color: white;
+                    border: 1px solid white;
+                }
+                &:nth-child(2) {
+                    border-radius:  5px 0px 0px 5px ;
+                }
+                &:nth-child(2) , &:nth-child(3){
+                    border-right:  1px solid black ;
+                }
+                
             }
         }
     }
@@ -118,7 +119,7 @@
                     }
                 }
 
-                li {
+                a {
                     text-align: left;
                     border: none !important;
                     border-radius: 0px !important;

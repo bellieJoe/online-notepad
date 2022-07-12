@@ -29,7 +29,7 @@ export const FormInput = (props) => {
 export const FormButton = (props) => {
     return (
         <div className="form-buttons">
-            <button ><i class="fa-solid fa-right-to-bracket space-after"></i> Sign In</button>
+            <button >{props.icon && props.icon} {props.content}</button>
         </div> 
     );
 }

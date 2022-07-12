@@ -27,9 +27,9 @@ function Nav(){
                 </div>
                 <ul className={menuToggle ? "menu-display" : "menu-hide"}>
                     <button  onClick={hideMenu}><i className="fa-solid fa-xmark"></i></button>
-                    <li><i className="fa-solid fa-table-list space-after"></i> Notes</li>
-                    <li><i className="fa-solid fa-user space-after"></i> Profile</li>
-                    <li><i className="fa-solid fa-user-plus space-after"></i> Sign Up</li>
+                    <Link onClick={hideMenu} to="signup" style={LinkStyle}><li><i className="fa-solid fa-table-list space-after"></i> Notes</li></Link>
+                    <Link onClick={hideMenu} to="signup" style={LinkStyle}><li><i className="fa-solid fa-user space-after"></i> Profile</li></Link>
+                    <Link onClick={hideMenu} to="signup" style={LinkStyle}><li><i className="fa-solid fa-user-plus space-after"></i> Sign Up</li></Link>
                     <Link onClick={hideMenu} to="signin" style={LinkStyle}><li><i className="fa-solid fa-right-to-bracket space-after"></i> Sign In</li></Link>
                 </ul>
             </div>
