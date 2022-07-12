@@ -1,22 +1,19 @@
 import "./Notes.scss";
-import { Action } from "../../Components/ActionBarComponents/ActionBarComponents";
+import NoteListActions from "../../Components/NoteListActions/NoteListActions";
+import NoteList from "../../Components/NoteList/NoteList";
+import PaginationBar from "../../Components/PaginationBar/PaginationBar";
+
 
 
 function Notes (props){
+
     return (
         <div className="Notes">
             <div className="container">
                 <h1>My Notes</h1>
-                <div className="action-bar">
-                    <label htmlFor="actions">Actions</label>
-                    <div className="actions-container" id="actions">
-                        <Action content="Delete" position="first" color="danger" />
-                        <Action content="Edit" color="light" />
-                        <Action content="View" color="light" />
-                        <Action content="New" position="last" color="primary" />
-                    </div>
-                </div>
-                
+                <NoteListActions />
+                <NoteList />
+                <PaginationBar />
             </div>
         </div>
     );

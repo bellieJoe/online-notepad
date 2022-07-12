@@ -1,0 +1,22 @@
+@use "../../Utilities/Styles/Theme.scss";
+
+.PaginationBar{
+
+}
+.Navigator, .Page{
+    padding: .5rem;
+    border: 1px solid rgb(193, 193, 193);
+    background: white;
+    border-radius: 0px;
+    color: gray;
+    cursor: pointer;
+    &.active {
+        background-color: Theme.$primary;
+        border-color: Theme.$primary;
+        color: white;
+    }
+    &:hover{
+        color: black;
+        background-color: Theme.$light-shade;
+    }
+}

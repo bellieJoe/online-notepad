@@ -60,3 +60,25 @@
         }
     }
 }
+
+.Checkbox{
+    $checkBg: #bebebe;
+    padding: 0rem !important;
+    background-color: $checkBg;
+    border: none;
+    color: $checkBg;
+    font-size: large;
+    width: 24px;
+    cursor: pointer;
+    &:hover{
+        background-color: #d5d5d5;
+        color: #d5d5d5;
+    }
+    &.checked {
+        background-color: Theme.$primary;
+        color: white;
+    }
+    input{
+        display: none;
+    }
+}

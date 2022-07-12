@@ -1,0 +1,9 @@
+@use "../../Utilities/Styles/Theme.scss";
+
+.NoteList{
+    background: Theme.$light;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgb(184, 184, 184);
+    margin-bottom: 1rem;
+    
+}

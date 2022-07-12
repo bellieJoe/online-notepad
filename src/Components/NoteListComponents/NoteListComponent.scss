@@ -1,0 +1,28 @@
+@use "../../Utilities/Styles/Theme.scss";
+
+.NoteListHeader{
+    background-color: Theme.$primary-darker;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.NoteListHeader, .NoteListItem{
+    text-align: left;
+    display: flex;
+    div:first-child{
+        flex: .1;
+        text-align: center;
+    }
+    div{
+        flex: 1;
+        padding: 1rem;
+    }
+}
+
+.NoteListItem{
+    &.selected{
+        background: Theme.$primary-lighter;
+    }
+}

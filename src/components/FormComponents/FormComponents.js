@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import "./FormComponents.scss";
 
@@ -31,6 +32,18 @@ export const FormButton = (props) => {
         <div className="form-buttons">
             <button >{props.icon && props.icon} {props.content}</button>
         </div> 
+    );
+}
+
+export const CheckBox = (props) => {
+    const [isChecked, setIsCheck] = useState(props.checked);
+
+
+    return (
+        <div  className={`Checkbox ${isChecked && "checked"}`} onClick={() => isChecked ? setIsCheck(false) : setIsCheck(true)} >
+            <i className="fa-solid fa-check" ></i>
+            <input type="checkbox" />
+        </div>
     );
 }
 
