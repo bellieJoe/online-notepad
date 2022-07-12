@@ -1,0 +1,42 @@
+@use "../../Utilities/Styles/Theme.scss";
+
+.Action{
+    padding: .5rem;
+    margin: 0rem;
+    width: max-content;
+    border-radius: 0px;
+    border: none;
+    min-width: 4rem;
+    cursor: pointer;
+    &.first{
+        border-top-left-radius: 4px ;
+        border-bottom-left-radius: 4px;
+    }
+    &.last{
+        border-top-right-radius: 4px ;
+        border-bottom-right-radius:4px;
+    }
+
+    &.danger{
+        background-color: Theme.$danger;
+        color: white;
+        &:hover{
+            background-color: Theme.$danger-lighter;
+        }
+    }
+    &.light{
+        background-color: Theme.$light;
+        &:hover{
+            background-color: Theme.$light-darker;
+        }
+    }
+    &.primary{
+        background-color: Theme.$primary;
+        color: white;
+        &:hover{
+            background-color: Theme.$primary-lighter;
+        }
+    }
+
+    
+}

@@ -1,0 +1,23 @@
+
+.Notes{
+    padding: 4rem 0rem;
+    .container{
+        h1{
+            text-align: left;
+        }
+        .action-bar{
+            text-align: right;
+            label{
+                margin: 0px 1rem;
+            }
+            .actions-container{
+                background-color: gray;
+                display: inline;
+                width: fit-content;
+                height: fit-content;
+                box-shadow: 0px 10px 5px #919191;
+            }
+        }
+    }
+    
+}
