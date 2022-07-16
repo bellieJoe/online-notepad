@@ -10,7 +10,7 @@ const NoteListActions = (props) =>{
                 <Action content="Delete" position="first" color="danger" />
                 <Action content="Edit" color="light" />
                 <Action content="View" color="light" />
-                <Action content="New" position="last" color="primary" />
+                <Action content="New" position="last" color="primary" to="new" />
             </div>
         </div>
     );

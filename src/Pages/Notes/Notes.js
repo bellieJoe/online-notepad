@@ -1,8 +1,5 @@
 import "./Notes.scss";
-import NoteListActions from "../../Components/NoteListActions/NoteListActions";
-import NoteList from "../../Components/NoteList/NoteList";
-import PaginationBar from "../../Components/PaginationBar/PaginationBar";
-
+import { Outlet } from "react-router-dom";
 
 
 function Notes (props){
@@ -10,12 +7,11 @@ function Notes (props){
     return (
         <div className="Notes">
             <div className="container">
-                <h1>My Notes</h1>
-                <NoteListActions />
-                <NoteList />
-                <PaginationBar />
+                <h1>Notes</h1>
+                <Outlet />
             </div>
         </div>
     );
 }
-export default Notes;
+
+export { Notes};
