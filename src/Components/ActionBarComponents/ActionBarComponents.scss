@@ -37,6 +37,13 @@
             background-color: Theme.$primary-lighter;
         }
     }
+    &.dark{
+        background-color: Theme.$dark;
+        color: white;
+        &:hover{
+            background-color: Theme.$dark-darker;
+        }
+    }
 
     
 }

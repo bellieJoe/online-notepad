@@ -1,5 +1,5 @@
 import "./NoteListActions.scss";
-
+import { Link } from "react-router-dom";
 import { Action } from "../ActionBarComponents/ActionBarComponents";
 
 const NoteListActions = (props) =>{
@@ -10,7 +10,7 @@ const NoteListActions = (props) =>{
                 <Action content="Delete" position="first" color="danger" />
                 <Action content="Edit" color="light" />
                 <Action content="View" color="light" />
-                <Action content="New" position="last" color="primary" to="new" />
+                <Link to="new"><Action content="New" position="last" color="primary"  /></Link>
             </div>
         </div>
     );

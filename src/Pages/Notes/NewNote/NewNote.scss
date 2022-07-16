@@ -1,0 +1,22 @@
+@use "../../../Utilities/Styles/ComponentUtils.scss";
+
+.Actions, .PublicVisibilityToggle{
+    width: max-content;
+}
+.Actions{
+    @include ComponentUtils.shadow-normal;
+}
+.PublicVisibilityToggle{
+    .status-label{
+        font-weight: bold;
+    }
+}
+.NewNote{
+    .TopBar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .Actions{
+           justify-self: flex-end;
+        }
+    }
+}

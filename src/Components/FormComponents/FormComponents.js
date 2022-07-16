@@ -47,3 +47,18 @@ export const CheckBox = (props) => {
     );
 }
 
+export const FormInputToggle = (props) => {
+    const [isToggled, setIsToggled] = useState(false);
+
+    return (
+        <div className="FormInputToggle">
+            <input type="checkbox" />
+            <div className={isToggled && "on"} onClick={()=> {
+                isToggled ? setIsToggled(false) : setIsToggled(true)
+            }}>
+                <div className="switch"></div>
+            </div>
+        </div>
+    );
+}
+
