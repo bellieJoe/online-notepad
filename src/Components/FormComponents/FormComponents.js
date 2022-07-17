@@ -21,7 +21,7 @@ export const FormInput = (props) => {
     return (
         <div className="form-input">
             <label htmlFor="txtInput">{props.label}</label>
-            <input type={ props.type === 'password' ? (type ==='password' ? 'password' : 'text') : props.type } id="txtInput" />
+            <input type={ props.type === 'password' ? (type ==='password' ? 'password' : 'text') : props.type } id="txtInput" required={ props.required ? true : false } />
             { props.type === "password" &&  <div className="eye-toggle-container">{(type === 'password' ? closeEye : openEye)}</div> }
         </div>
     );
@@ -30,7 +30,7 @@ export const FormInput = (props) => {
 export const FormButton = (props) => {
     return (
         <div className="form-buttons">
-            <button >{props.icon && props.icon} {props.content}</button>
+            <button type={props.type ? props.type : "button"}>{props.icon && props.icon} {props.content}</button>
         </div> 
     );
 }

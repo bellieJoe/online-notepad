@@ -15,8 +15,35 @@
     .TopBar{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 1rem;
         .Actions{
            justify-self: flex-end;
         }
+    }
+}
+
+@mixin NoteInputs {
+    @include ComponentUtils.shadow-normal;
+    border: 1px solid #b0b0b0;
+    outline: none;
+    border-radius: 3px;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    &:hover{
+        border: 1px solid #0988cc;
+    }
+}
+.Title{
+    margin-bottom: 1rem;
+    input{
+        @include NoteInputs;
+    }
+}
+.Content {
+    margin-bottom: 1rem;
+    textarea{
+        @include NoteInputs;
+        font-family: arial;
     }
 }
